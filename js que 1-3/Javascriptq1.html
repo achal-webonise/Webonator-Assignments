@@ -1,0 +1,45 @@
+
+<!Doctype html>
+<html>
+
+<head>
+    <Title> Javascript question 1</Title>
+</head>
+
+<body>
+    <script>
+        Array = prompt("Enter Numbers seperated by commas");
+        console.log(Array);
+        
+        ArraySplit = Array.split(',');
+        
+        var arr = [], frequency = []; 
+        var prev;
+        
+        ArraySplit.sort();
+        
+        for(let i=0;i<ArraySplit.length;i++)
+        {
+            if(ArraySplit[i] !== prev)
+            {
+                arr.push(ArraySplit[i]);
+                frequency.push(1);
+            }
+            else{
+                frequency[frequency.length-1]++;
+            }
+            prev = ArraySplit[i];
+        }
+
+
+        for(let i=0;i<arr.length;i++)
+        {
+            document.write(`${arr[i]}     : ${frequency[i]} `);
+            document.write("<br><br>");
+        }
+
+       
+    </script>
+</body>
+
+</html>
