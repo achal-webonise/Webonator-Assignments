@@ -1,0 +1,57 @@
+
+<html>
+    <head><title> Javascript Calculator </title></head>
+
+    <body>
+
+        <form name="JScalculator" >
+
+            <span>Input1 :</span>
+            <input type="number" name="n1"> 
+            
+            <br><br>
+            
+            <span>Input 2:</span>
+            <input type = "number" name="n2"> <br>
+            <br>
+            <br>
+
+            	  <span>Result : </span><input type ="number" name = "result"> 
+             
+            <br><br>
+            <button type="button" onclick="calculate(1)">Add</button>
+            <button type="button" onclick="calculate(2)">Subtract</button>
+            <br>
+            <br>
+           
+        </form>
+
+        <script type="text/javascript">
+
+        function calculate(operation)
+        {
+            var Numb1,Numb2;
+           
+
+            Numb1 = Number(document.JScalculator.n1.value);
+            Numb2 = Number(document.JScalculator.n2.value);
+
+           
+           if(operation==1)
+           {
+            document.JScalculator.result.value = Numb1+Numb2;
+           }
+           else
+           {
+            document.JScalculator.result.value = Numb1-Numb2;
+           }
+                   
+            
+        }
+
+        </script>
+
+        </form>
+
+    </body>
+</html>
