@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 class Phone
 {
-     String name;
      long price;
+     String name;	
     
  
     
@@ -51,8 +51,9 @@ public class Main
 	public static void main(String[] args) 
 	{
 	    Scanner sc = new Scanner(System.in);
+            long Price = sc.nextLong();
 	    String str = sc.nextLine();
-	    long Price = sc.nextLong();
+	    
 	    
 	    Apple ap = new Apple();
 	    ap.App_Store();
@@ -64,7 +65,7 @@ public class Main
 	    System.out.println("You are using the "+str+" and its price is "+Price);
 	    mi.MI_Store();
 	    mi.create_Contact("7988039885", "Achal");
-	    mi.SMS("7988039885", "Achal", "Hey! All good?");
+	    mi.SMS("7988039885", "Achal", "Hello! How are you?");
 	    
 	    
 	    
